@@ -62,7 +62,7 @@ export default function FaqSection() {
 
   return (
     <motion.section
-      className="w-full min-h-[100dvh] bg-primary text-white px-4 md:px-8 flex flex-col items-center gap-8 pt-28"
+      className="w-full min-h-[100dvh] bg-primary text-second2 px-4 md:px-8 flex flex-col items-center gap-8 pt-28"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -83,7 +83,7 @@ export default function FaqSection() {
           className="lg:col-span-5 relative flex h-full justify-center items-center lg:sticky lg:top-32 overflow-hidden w-full"
         >
           {/* Container Foto Utama */}
-          <div className="relative h-full aspect-[4/5] w-full bg-white/5 border border-second/30 z-10 overflow-hidden">
+          <div className="relative h-full aspect-[4/5] w-full bg-second2/5 border border-second/30 z-10 overflow-hidden">
             <Image
               src="/assets/gallery/2.webp"
               alt="Wedding Planning Consultation"
@@ -103,17 +103,17 @@ export default function FaqSection() {
                 <motion.div
                   key={index}
                   variants={itemVariants}
-                  className="bg-white/5 border border-white/10 transition-colors duration-300 hover:border-second/40 overflow-hidden"
+                  className="bg-second border border-second2/10 transition-colors duration-300 hover:border-second/40 overflow-hidden"
                 >
                   {/* Pertanyaan / Button Toggle */}
                   <button
                     onClick={() => toggleFaq(index)}
                     className="w-full p-4 md:p-8 flex justify-between items-center text-left gap-4 cursor-pointer focus:outline-none"
                   >
-                    <span className="font-serif text-lg lg:text-xl text-white font-normal">
+                    <span className="font-serif text-lg lg:text-xl text-second2 font-normal">
                       {faq.question}
                     </span>
-                    <span className="font-serif text-2xl text-second transition-transform duration-300">
+                    <span className="font-serif text-2xl text-second2 transition-transform duration-300">
                       {isOpen ? "−" : "+"}
                     </span>
                   </button>
@@ -128,7 +128,7 @@ export default function FaqSection() {
                         transition={{ duration: 0.35, ease: [0.25, 1, 0.5, 1] }}
                         className="overflow-hidden"
                       >
-                        <div className="p-4 md:p-8 font-sans text-sm lg:text-base text-white/70 leading-relaxed border-t border-white/5">
+                        <div className="p-4 md:p-8 font-sans text-sm lg:text-base text-second2/70 leading-relaxed border-t border-second2/5">
                           {faq.answer}
                         </div>
                       </motion.div>

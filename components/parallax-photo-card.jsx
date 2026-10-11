@@ -37,7 +37,7 @@ export function ParallaxPhotoCard({
 
   return (
     <div
-      className="relative group overflow-hidden border border-white/10 hover:border-second/40 transition-colors duration-500"
+      className="relative group overflow-hidden border border-second2/10 hover:border-second/40 transition-colors duration-500"
       style={{ width: "100%", height: frameHeight }}
     >
       {/* FOTO PARALLAX */}
@@ -64,11 +64,11 @@ export function ParallaxPhotoCard({
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-primary via-primary/70 to-transparent z-10 p-8 flex flex-col justify-end items-center gap-2">
         {man && woman && (
           <>
-            <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-second">
+            <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-black">
               The Wedding of{" "}
             </span>
-            <p className="font-serif text-2xl lg:text-3xl text-white text-center font-normal tracking-wide">
-              {man} <span className="italic text-second font-serif">&</span>{" "}
+            <p className="font-serif text-2xl lg:text-3xl text-second text-center font-normal tracking-wide">
+              {man} <span className="italic text-black font-serif">&</span>{" "}
               {woman}
             </p>
           </>
@@ -76,7 +76,7 @@ export function ParallaxPhotoCard({
       </div>
 
       {/* SUBTLE INNER BORDER */}
-      <div className="absolute inset-0 pointer-events-none z-20 border border-white/5" />
+      <div className="absolute inset-0 pointer-events-none z-20 border border-second/5" />
     </div>
   );
 }

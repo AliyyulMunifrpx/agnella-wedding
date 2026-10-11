@@ -14,7 +14,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="w-full bg-black text-white px-4 md:px-8 lg:px-16 py-16 flex flex-col justify-between border-t border-white/10 relative overflow-hidden gap-16">
+    <footer className="w-full bg-black text-white px-4 md:px-8 py-8 flex flex-col justify-between border-t border-white/10 relative overflow-hidden gap-4">
       {/* ATAS: BRAND STATEMENT, CTA & BACK TO TOP */}
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 pb-16 border-b border-white/10">
         <div className="flex flex-col gap-4">
@@ -33,13 +33,13 @@ export default function Footer() {
             href='#contact'
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 bg-second text-black font-sans text-xs uppercase tracking-[0.2em] font-bold rounded-full hover:bg-white transition-colors duration-300"
+            className="px-8 py-4 bg-second text-black whitespace-nowrap font-sans text-xs uppercase tracking-[0.2em] font-bold rounded-full hover:bg-white transition-colors duration-300"
           >
             Book Consultation
           </Link>
           <Link
             href="#top"
-            className="group flex items-center gap-4 text-xs font-sans uppercase tracking-[0.2em] text-white/70 hover:text-second transition-colors duration-300 p-2"
+            className="group flex items-center gap-4 whitespace-nowrap text-xs font-sans uppercase tracking-[0.2em] text-white/70 hover:text-second transition-colors duration-300 p-2"
           >
             <span>Back to top</span>
             <span className="w-8 h-8 border border-white/20 flex items-center justify-center group-hover:border-second group-hover:-translate-y-1 transition-all duration-300">
@@ -112,7 +112,7 @@ export default function Footer() {
       </div>
 
       {/* BAWAH: COPYRIGHT & CREDITS */}
-      <div className="flex flex-col md:flex-row justify-between items-center gap-4 lg:pt-8 font-sans text-xs text-white/50">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-4 font-sans text-xs text-white/50">
         <p>© 2026 {information.name}. All Rights Reserved.</p>
         <p className="tracking-widest uppercase">
           Designed for Luxury Celebrations

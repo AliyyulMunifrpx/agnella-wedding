@@ -79,7 +79,7 @@ export default function PackagesSection() {
 
   return (
     <motion.section
-      className="w-full bg-primary text-white px-4 md:px-8 pt-28 flex flex-col gap-16"
+      className="w-full bg-primary text-second2 px-4 md:px-8 pt-28 flex flex-col gap-16"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -99,15 +99,15 @@ export default function PackagesSection() {
           <motion.div
             key={index}
             variants={itemVariants}
-            className={`relative flex flex-col justify-between p-4 md:p-8 lg:p-12 bg-white/5 border transition-all duration-500 gap-8 overflow-hidden ${
+            className={`relative flex flex-col justify-between p-4 md:p-8 lg:p-12 bg-second border transition-all duration-500 gap-8 overflow-hidden ${
               pkg.isPopular
                 ? "border-second shadow-2xl lg:-translate-y-4"
-                : "border-white/10 hover:border-second/50"
+                : "border-second2/10 hover:border-second/50"
             }`}
           >
             {/* TAG HIGHLIGHT UNTUK PAKET FAVORIT */}
             {pkg.isPopular && (
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-second text-primary font-sans text-[10px] font-bold uppercase tracking-[0.2em] px-4 py-1.5 z-10">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-second2 text-black font-sans text-[10px] font-bold uppercase tracking-[0.2em] px-4 py-1.5 z-10">
                 Most Preferred
               </div>
             )}
@@ -118,22 +118,22 @@ export default function PackagesSection() {
                 <span className="font-serif text-xs text-second uppercase tracking-[0.2em]">
                   {pkg.tier}
                 </span>
-                <h3 className="font-serif text-2xl text-white font-normal tracking-wide">
+                <h3 className="font-serif text-2xl text-seondc2 font-normal tracking-wide">
                   {pkg.name}
                 </h3>
               </div>
 
-              <p className="font-sans text-sm text-white/70 leading-relaxed min-h-[48px]">
+              <p className="font-sans text-sm text-second2/70 leading-relaxed min-h-[48px]">
                 {pkg.subtitle}
               </p>
 
-              <div className="w-full h-[1px] bg-white/10" />
+              <div className="w-full h-[1px] bg-second2/10" />
 
               {/* FITUR PAKET */}
-              <ul className="flex flex-col gap-4 font-sans text-xs lg:text-sm text-white/80">
+              <ul className="flex flex-col gap-4 font-sans text-xs lg:text-sm text-second2/80">
                 {pkg.features.map((feature, fIdx) => (
                   <li key={fIdx} className="flex items-start gap-4">
-                    <span className="text-second mt-1 text-xs">✦</span>
+                    <span className="text-second2 mt-1 text-xs">✦</span>
                     <span className="leading-relaxed">{feature}</span>
                   </li>
                 ))}
@@ -145,8 +145,8 @@ export default function PackagesSection() {
               href="#contact"
               className={`w-full py-4 text-center font-sans text-xs uppercase tracking-[0.2em] transition-all duration-300 block ${
                 pkg.isPopular
-                  ? "bg-second text-primary font-semibold hover:bg-white"
-                  : "border border-white/20 text-white hover:border-second hover:text-second"
+                  ? "bg-second2 text-second font-semibold hover:bg-black"
+                  : "border border-second2/20 text-second2 hover:border-second2 hover:text-second2"
               }`}
             >
               Inquire Package
