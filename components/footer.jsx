@@ -15,7 +15,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="w-full min-h-[70dvh] bg-black text-white px-4 md:px-8 lg:px-24 py-16 flex flex-col justify-between border-t border-white/10 relative overflow-hidden">
+    <footer id="footer" className="w-full bg-black text-white px-4 md:px-8 lg:px-24 py-16 flex flex-col justify-between border-t border-white/10 relative overflow-hidden">
       {/* ATAS: BRAND STATEMENT & BACK TO TOP */}
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 pb-16 border-b border-white/10">
         <div className="flex flex-col gap-4 w-full lg:w-xl">
@@ -36,7 +36,35 @@ export default function Footer() {
         </Link>
       </div>
 
-      {/* TENGAH: MENU NAVIGASI (SPREAD SEYA) */}
+      {/* TENGAH: INFO LOKASI, JAM OPERASIONAL & GOOGLE MAPS */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 py-16 border-b border-white/10 items-center">
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-2">
+            <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-second">
+              Location & Address
+            </span>
+            <p className="font-sans text-sm md:text-base text-white/80 leading-relaxed max-w-md">
+              {information.address}
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-second">
+              Office Hours
+            </span>
+            <p className="font-sans text-sm text-white/80">
+              {information.officeHours}
+            </p>
+          </div>
+        </div>
+
+        {/* GOOGLE MAPS EMBED */}
+        <div
+          className="w-full h-[280px] md:h-[320px] rounded-2xl overflow-hidden border border-white/10 shadow-lg [&>iframe]:w-full [&>iframe]:h-full [&>iframe]:border-0"
+          dangerouslySetInnerHTML={{ __html: information.map }}
+        />
+      </div>
+
+      {/* TENGAH: MENU NAVIGASI */}
       <div className="py-8">
         <nav className="flex flex-wrap items-center gap-8 lg:gap-16">
           {footerData.navLinks.map((item, index) => (
