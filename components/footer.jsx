@@ -30,7 +30,7 @@ export default function Footer() {
         {/* CTA & BACK TO TOP */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <Link
-            href={`https://wa.me/${information.phone}`}
+            href='#contact'
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 bg-second text-black font-sans text-xs uppercase tracking-[0.2em] font-bold rounded-full hover:bg-white transition-colors duration-300"
