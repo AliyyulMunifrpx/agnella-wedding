@@ -127,7 +127,7 @@ export default function ContactSection() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="e.g. Clarissa & Raditya"
-                  className="w-full bg-primary/50 border border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors font-sans"
+                  className="w-full bg-primary border border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors font-sans"
                 />
               </div>
 
@@ -143,7 +143,7 @@ export default function ContactSection() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="e.g. 08123456789"
-                  className="w-full bg-primary/50 border border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors font-sans"
+                  className="w-full bg-primary border border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors font-sans"
                 />
               </div>
             </div>
@@ -160,7 +160,7 @@ export default function ContactSection() {
                   value={formData.weddingDate}
                   onChange={handleChange}
                   placeholder="e.g. Q4 2026 / Oct 2026"
-                  className="w-full bg-primary/50 border border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors font-sans"
+                  className="w-full bg-primary border border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors font-sans"
                 />
               </div>
 
@@ -175,7 +175,7 @@ export default function ContactSection() {
                   value={formData.guestCount}
                   onChange={handleChange}
                   placeholder="e.g. 300 - 500 guests"
-                  className="w-full bg-primary/50 border border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors font-sans"
+                  className="w-full bg-primary border border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors font-sans"
                 />
               </div>
             </div>
@@ -213,7 +213,7 @@ export default function ContactSection() {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Tell us about your wedding concept, location, or any specific requests..."
-                className="w-full bg-primary/50 border font-sans border-second2/10 p-4 text-sm text-black focus:outline-none focus:border-second transition-colors resize-none"
+                className="w-full bg-primary border font-sans border-second2/10 p-4 text-sm text-black focus:outline-none focus:border-second transition-colors resize-none"
               />
             </div>
 
