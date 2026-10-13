@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import CircularCarousel from "./image-carousel.jsx";
 import { ParallaxPhotoCard } from "./parallax-photo-card.jsx";
 
@@ -77,39 +76,15 @@ export default function WeddingSection() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const editorialReveal = {
-    hidden: { clipPath: "inset(100% 0 0 0)" },
-    visible: (delay = 0) => ({
-      clipPath: "inset(0% 0 0 0)",
-      transition: {
-        duration: 0.8,
-        delay,
-        ease: [0.25, 1, 0.5, 1],
-      },
-    }),
-  };
-
   return (
     <div className="flex min-h-[80dvh] w-full flex-col bg-primary gap-8 pt-28 overflow-hidden">
-      <motion.div
-        className="flex h-fit shrink-0 items-center justify-center"
-        initial="hidden"
-        animate="visible"
-        variants={editorialReveal}
-        custom={0}
-      >
+      <div className="flex h-fit shrink-0 items-center justify-center">
         <h2 className=" text-3xl md:text-5xl font-normal text-second text-center">
           Weddings We&apos;ve Created{" "}
         </h2>
-      </motion.div>
+      </div>
 
-      <motion.div
-        className="flex flex-1 items-center  px-4 md:px-8 overflow-hidden"
-        initial="hidden"
-        animate="visible"
-        variants={editorialReveal}
-        custom={0.25}
-      >
+      <div className="flex flex-1 items-center px-4 md:px-8 overflow-hidden">
         <CircularCarousel
           items={images}
           visibleCount={visibleCount}
@@ -125,7 +100,7 @@ export default function WeddingSection() {
             />
           )}
         />
-      </motion.div>
+      </div>
     </div>
   );
 }
