@@ -64,11 +64,11 @@ export function ParallaxPhotoCard({
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-primary via-primary/70 to-transparent z-10 p-8 flex flex-col justify-end items-center gap-2">
         {man && woman && (
           <>
-            <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-black">
+            <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-second2">
               The Wedding of{" "}
             </span>
             <p className="font-serif text-2xl lg:text-3xl text-second text-center font-normal tracking-wide">
-              {man} <span className="italic text-black font-serif">&</span>{" "}
+              {man} <span className="italic text-second2 font-serif">&</span>{" "}
               {woman}
             </p>
           </>

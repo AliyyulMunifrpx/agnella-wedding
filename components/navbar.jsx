@@ -26,7 +26,7 @@ export default function Navbar() {
         </div>
 
         {/* === KANAN: MENU DESKTOP (Langsung di-expand) === */}
-        <nav className="hidden md:flex items-center gap-12 lg:gap-16">
+        <nav className="hidden md:flex items-center text-second2 gap-12 lg:gap-16">
           <Link
             href="#weddings"
             className="hover:text-second transition-colors"
@@ -48,7 +48,7 @@ export default function Navbar() {
         <div className="flex md:hidden items-center">
           <button
             onClick={() => setIsMobileOpen(true)}
-            className="focus:outline-none"
+            className="focus:outline-none text-second"
           >
             <svg
               className="w-8 h-8"
@@ -84,7 +84,7 @@ export default function Navbar() {
             </Link>
             <button
               onClick={() => setIsMobileOpen(false)}
-              className="focus:outline-none"
+              className="focus:outline-none text-second"
             >
               <svg
                 className="w-8 h-8"
@@ -107,21 +107,21 @@ export default function Navbar() {
             <Link
               href="#weddings"
               onClick={() => setIsMobileOpen(false)}
-              className="hover:text-second text-2xl transition-colors"
+              className="text-second text-2xl transition-colors"
             >
               Weddings
             </Link>
             <Link
               href="#packages"
               onClick={() => setIsMobileOpen(false)}
-              className="hover:text-second text-2xl transition-colors"
+              className="text-second text-2xl transition-colors"
             >
               Packages
             </Link>
             <Link
               href="#contact"
               onClick={() => setIsMobileOpen(false)}
-              className="hover:text-second text-2xl transition-colors"
+              className="text-second text-2xl transition-colors"
             >
               Contact
             </Link>

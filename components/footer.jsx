@@ -15,7 +15,7 @@ export default function Footer() {
       {/* ATAS: BRAND STATEMENT, CTA & BACK TO TOP */}
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 pb-16 border-b border-white/10">
         <div className="flex flex-col gap-4">
-          <h2 className="font-serif text-3xl md:text-6xl font-normal text-second2 leading-tight">
+          <h2 className="font-serif text-3xl md:text-6xl font-normal text-second leading-tight">
             {information.name}
           </h2>
           <p className="font-sans text-sm text-white/70 max-w-md">
@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <Link
             href="#top"
-            className="group flex items-center gap-4 whitespace-nowrap text-xs font-sans uppercase tracking-[0.2em] text-white/70 hover:text-second2 transition-colors duration-300 p-2"
+            className="group flex items-center gap-4 whitespace-nowrap text-xs font-sans uppercase tracking-[0.2em] text-white/70 hover:text-second transition-colors duration-300 p-2"
           >
             <span>Back to top</span>
             <span className="w-8 h-8 border border-white/20 flex items-center justify-center group-hover:border-second group-hover:-translate-y-1 transition-all duration-300">
@@ -42,7 +42,7 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 py-8 border-b border-white/10">
         {/* 1. NAVIGASI */}
         <div className="flex flex-col gap-4">
-          <span className="font-sans text-xs uppercase tracking-[0.3em] text-second2 font-bold">
+          <span className="font-sans text-xs uppercase tracking-[0.3em] text-second font-bold">
             Navigation
           </span>
           <nav className="flex flex-col gap-4">
@@ -50,7 +50,7 @@ export default function Footer() {
               <Link
                 key={index}
                 href={item.href}
-                className="relative font-sans text-xs uppercase tracking-[0.2em] text-white/80 hover:text-second2 transition-colors duration-300 w-fit py-2 group"
+                className="relative font-sans text-xs uppercase tracking-[0.2em] text-white/80 hover:text-second transition-colors duration-300 w-fit py-2 group"
               >
                 {item.name}
                 <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-second transition-all duration-300 group-hover:w-full" />
@@ -61,7 +61,7 @@ export default function Footer() {
 
         {/* 2. CONNECT & SOSMED */}
         <div className="flex flex-col gap-4">
-          <span className="font-sans text-xs uppercase tracking-[0.3em] text-second2 font-bold">
+          <span className="font-sans text-xs uppercase tracking-[0.3em] text-second font-bold">
             Connect & Office
           </span>
           <div className="flex flex-col gap-4 font-sans text-sm text-white/80">
@@ -72,7 +72,7 @@ export default function Footer() {
                 href={`https://instagram.com/${information.instagram.replace("@", "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 border border-white/20 rounded-full text-xs uppercase tracking-widest hover:border-second hover:text-second2 transition-colors duration-300"
+                className="px-4 py-2 border border-white/20 rounded-full text-xs uppercase tracking-widest hover:border-second hover:text-second transition-colors duration-300"
               >
                 Instagram
               </Link>
@@ -80,7 +80,7 @@ export default function Footer() {
                 href={`https://wa.me/${information.phone}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 border border-white/20 rounded-full text-xs uppercase tracking-widest hover:border-second hover:text-second2 transition-colors duration-300"
+                className="px-4 py-2 border border-white/20 rounded-full text-xs uppercase tracking-widest hover:border-second hover:text-second transition-colors duration-300"
               >
                 WhatsApp
               </Link>
@@ -90,7 +90,7 @@ export default function Footer() {
 
         {/* 3. GOOGLE MAPS */}
         <div className="flex flex-col gap-4">
-          <span className="font-sans text-xs uppercase tracking-[0.3em] text-second2 font-bold">
+          <span className="font-sans text-xs uppercase tracking-[0.3em] text-second font-bold">
             Location Map
           </span>
           <div

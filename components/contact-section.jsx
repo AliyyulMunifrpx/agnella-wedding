@@ -54,7 +54,7 @@ export default function ContactSection() {
       <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         {/* === SISI KIRI: INFORMASI KONTAK & EDITORIAL === */}
         <div className="lg:col-span-5 flex flex-col gap-12 overflow-hidden">
-          <p className="font-sans text-sm lg:text-base text-black/70 leading-relaxed">
+          <p className="font-sans text-sm lg:text-base text-second2/70 leading-relaxed">
             We invite you to share your vision with us. Fill out the form or
             reach out directly to schedule a private consultation with our lead
             event directors.
@@ -66,7 +66,7 @@ export default function ContactSection() {
               <span className="text-xs uppercase tracking-[0.2em] text-second">
                 Direct Concierge
               </span>
-              <p className="font-sans  text-black">
+              <p className="font-sans  text-second2">
                 {information.phoneDisplay}
               </p>
             </div>
@@ -75,14 +75,14 @@ export default function ContactSection() {
               <span className="text-xs uppercase tracking-[0.2em] text-second">
                 Email Inquiry
               </span>
-              <p className="font-sans  text-black">{information.email}</p>
+              <p className="font-sans  text-second2">{information.email}</p>
             </div>
 
             <div className="flex flex-col gap-2">
               <span className="text-xs uppercase tracking-[0.2em] text-second">
                 Atelier Studio
               </span>
-              <p className="text-black/80 leading-relaxed">
+              <p className="text-second2/80 leading-relaxed">
                 {information.address}
               </p>
             </div>
@@ -91,7 +91,7 @@ export default function ContactSection() {
               <span className="text-xs uppercase tracking-[0.2em] text-second">
                 Instagram
               </span>
-              <p className="text-black/80">{information.instagram}</p>
+              <p className="text-second2/80">{information.instagram}</p>
             </div>
           </div>
         </div>
@@ -103,10 +103,10 @@ export default function ContactSection() {
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-8">
             <div className="flex flex-col gap-2">
-              <h3 className="font-sans text-2xl text-second2 font-normal">
+              <h3 className="font-sans text-2xl text-primary font-normal">
                 Private Consultation Form
               </h3>
-              <p className="font-sans text-xs text-second2/60">
+              <p className="font-sans text-xs text-primary/60">
                 Your details will be forwarded directly to our WhatsApp
                 concierge.
               </p>
@@ -115,7 +115,7 @@ export default function ContactSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* NAMA LENGKAP */}
               <div className="flex flex-col gap-2">
-                <label className="font-sans text-xs uppercase tracking-widest text-second2">
+                <label className="font-sans text-xs uppercase tracking-widest text-primary">
                   Full Name *
                 </label>
                 <input
@@ -125,13 +125,13 @@ export default function ContactSection() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="e.g. Clarissa & Raditya"
-                  className="w-full bg-primary border border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors font-sans"
+                  className="w-full bg-second2 border border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors font-sans"
                 />
               </div>
 
               {/* NO. WHATSAPP */}
               <div className="flex flex-col gap-2">
-                <label className="font-sans text-xs uppercase tracking-widest text-second2">
+                <label className="font-sans text-xs uppercase tracking-widest text-primary">
                   WhatsApp Number *
                 </label>
                 <input
@@ -141,7 +141,7 @@ export default function ContactSection() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="e.g. 08123456789"
-                  className="w-full bg-primary border border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors font-sans"
+                  className="w-full bg-second2 border border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors font-sans"
                 />
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function ContactSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* ESTIMASI TANGGAL */}
               <div className="flex flex-col gap-2">
-                <label className="font-sans text-xs uppercase tracking-widest text-second2">
+                <label className="font-sans text-xs uppercase tracking-widest text-primary">
                   Estimated Wedding Date
                 </label>
                 <input
@@ -158,13 +158,13 @@ export default function ContactSection() {
                   value={formData.weddingDate}
                   onChange={handleChange}
                   placeholder="e.g. Q4 2026 / Oct 2026"
-                  className="w-full bg-primary border border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors font-sans"
+                  className="w-full bg-second2 border border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors font-sans"
                 />
               </div>
 
               {/* ESTIMASI TAMU */}
               <div className="flex flex-col gap-2">
-                <label className="font-sans text-xs uppercase tracking-widest text-second2">
+                <label className="font-sans text-xs uppercase tracking-widest text-primary">
                   Estimated Guests
                 </label>
                 <input
@@ -173,21 +173,21 @@ export default function ContactSection() {
                   value={formData.guestCount}
                   onChange={handleChange}
                   placeholder="e.g. 300 - 500 guests"
-                  className="w-full bg-primary border border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors font-sans"
+                  className="w-full bg-second2 border border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors font-sans"
                 />
               </div>
             </div>
 
             {/* PILIH SERVICE */}
             <div className="flex flex-col gap-2">
-              <label className="font-sans text-xs uppercase tracking-widest text-second2">
+              <label className="font-sans text-xs uppercase tracking-widest text-primary">
                 Interested Packages
               </label>
               <select
                 name="service"
                 value={formData.service}
                 onChange={handleChange}
-                className="w-full bg-primary border font-sans border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors cursor-pointer"
+                className="w-full bg-second2 border font-sans border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors cursor-pointer"
               >
                 <option value="Full Wedding Planning">
                   THE INTIMATE AFFAIR{" "}
@@ -201,7 +201,7 @@ export default function ContactSection() {
 
             {/* CATATAN / PESAN */}
             <div className="flex flex-col gap-2">
-              <label className="font-sans text-xs uppercase tracking-widest text-second2">
+              <label className="font-sans text-xs uppercase tracking-widest text-primary">
                 Vision & Notes
               </label>
               <textarea
@@ -210,14 +210,14 @@ export default function ContactSection() {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Tell us about your wedding concept, location, or any specific requests..."
-                className="w-full bg-primary border font-sans border-second2/10 p-4 text-sm text-black focus:outline-none focus:border-second transition-colors resize-none"
+                className="w-full bg-second2 border font-sans border-second2/10 p-4 text-sm text-black focus:outline-none focus:border-second transition-colors resize-none"
               />
             </div>
 
             {/* SUBMIT BUTTON */}
             <button
               type="submit"
-              className="w-full py-4 bg-white text-second font-sans text-xs font-semibold uppercase tracking-[0.2em] hover:bg-primary hover:text-second transition-colors duration-300 cursor-pointer"
+              className="w-full py-4 bg-primary text-second font-sans text-xs font-semibold uppercase tracking-[0.2em] hover:bg-primary/70 hover:text-second transition-colors duration-300 cursor-pointer"
             >
               Send Inquiry via WhatsApp
             </button>
