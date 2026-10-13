@@ -108,7 +108,7 @@ export default function PackagesSection() {
               href="#contact"
               className={`w-full py-4 text-center font-sans text-xs uppercase tracking-[0.2em] transition-all duration-300 block ${
                 pkg.isPopular
-                  ? "bg-second2 text-second font-semibold hover:bg-black"
+                  ? "bg-second2 text-second font-semibold hover:bg-primary"
                   : "border border-second2/20 text-second2 hover:border-second2 hover:text-second2"
               }`}
             >

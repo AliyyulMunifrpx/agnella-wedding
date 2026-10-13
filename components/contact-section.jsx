@@ -10,7 +10,7 @@ export default function ContactSection() {
     phone: "",
     weddingDate: "",
     guestCount: "",
-    service: "Full Wedding Planning",
+    package: "",
     message: "",
   });
 
@@ -34,7 +34,7 @@ export default function ContactSection() {
       `• *No. WhatsApp:* ${formData.phone}\n` +
       `• *Rencana Tanggal:* ${formData.weddingDate || "-"}\n` +
       `• *Estimasi Tamu:* ${formData.guestCount || "-"}\n` +
-      `• *Layanan:* ${formData.service}\n` +
+      `• *Paket:* ${formData.package || "-"}\n` +
       `• *Catatan / Pesan:* ${formData.message || "-"}\n\n` +
       `Terima kasih!`;
 
@@ -66,7 +66,7 @@ export default function ContactSection() {
               <span className="text-xs uppercase tracking-[0.2em] text-second">
                 Direct Concierge
               </span>
-              <p className="font-sans text-lg text-black">
+              <p className="font-sans  text-black">
                 {information.phoneDisplay}
               </p>
             </div>
@@ -75,9 +75,7 @@ export default function ContactSection() {
               <span className="text-xs uppercase tracking-[0.2em] text-second">
                 Email Inquiry
               </span>
-              <p className="font-sans text-lg text-black">
-                {information.email}
-              </p>
+              <p className="font-sans  text-black">{information.email}</p>
             </div>
 
             <div className="flex flex-col gap-2">
@@ -183,7 +181,7 @@ export default function ContactSection() {
             {/* PILIH SERVICE */}
             <div className="flex flex-col gap-2">
               <label className="font-sans text-xs uppercase tracking-widest text-second2">
-                Interested Service
+                Interested Packages
               </label>
               <select
                 name="service"
@@ -192,13 +190,12 @@ export default function ContactSection() {
                 className="w-full bg-primary border font-sans border-second2/10 px-4 py-4 text-sm text-black focus:outline-none focus:border-second transition-colors cursor-pointer"
               >
                 <option value="Full Wedding Planning">
-                  Full Wedding Planning
+                  THE INTIMATE AFFAIR{" "}
                 </option>
                 <option value="Wedding Day Management">
-                  Wedding Day Management
+                  THE GRAND ELEGANCE
                 </option>
-                <option value="Intimate Wedding">Intimate Wedding</option>
-                <option value="Custom Wedding">Custom Wedding</option>
+                <option value="Intimate Wedding">THE ROYAL EXPERIENCE</option>
               </select>
             </div>
 
@@ -220,7 +217,7 @@ export default function ContactSection() {
             {/* SUBMIT BUTTON */}
             <button
               type="submit"
-              className="w-full py-4 bg-black text-primary font-sans text-xs font-semibold uppercase tracking-[0.2em] hover:bg-primary hover:text-second transition-colors duration-300 cursor-pointer"
+              className="w-full py-4 bg-white text-second font-sans text-xs font-semibold uppercase tracking-[0.2em] hover:bg-primary hover:text-second transition-colors duration-300 cursor-pointer"
             >
               Send Inquiry via WhatsApp
             </button>
