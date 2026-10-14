@@ -23,8 +23,8 @@ export default function MainSection() {
       {/* 2. HEADLINE & SUBTITLE (DIJAMIN KONTRAS DENGAN DROP SHADOW) */}
       <div className="col-start-1 lg:col-end-4 my-auto z-10 row-start-2 px-4">
         <h2 className="text-3xl lg:text-7xl text-center text-white leading-tight">
-          We Create Moments <br />
-          <span className="italic">Worth Remembering.</span>
+          Make your precious moment<br />
+          <span className="italic">unforgetable.</span>
         </h2>
         <h1 className="font-sans text-center text-md mt-8 lg:mt-4 lg:text-2xl font-extralight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] tracking-[0.3rem]">
           Event & Wedding Planner {information.city}
